@@ -13,7 +13,6 @@ namespace Mensualidad_Gimnasio
         {
             Login.start();
             
-
             bool reiniciar = false;
             do
             {
