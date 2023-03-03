@@ -16,3 +16,4 @@ C:\Users\jonhf\source\repos\Mensualidad Gimnasio\02-form\Gimnasio\obj\Debug\net6
 C:\Users\jonhf\source\repos\Mensualidad Gimnasio\02-form\Gimnasio\obj\Debug\net6.0-windows\ref\Gimnasio.dll
 C:\Users\jonhf\source\repos\Mensualidad Gimnasio\02-form\Gimnasio\obj\Debug\net6.0-windows\Gimnasio.GimnasioRobles.resources
 C:\Users\jonhf\source\repos\Mensualidad Gimnasio\02-form\Gimnasio\obj\Debug\net6.0-windows\Gimnasio.Login.resources
+C:\Users\jonhf\source\repos\Mensualidad Gimnasio\02-form\Gimnasio\obj\Debug\net6.0-windows\Gimnasio.Report.resources

@@ -33,7 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.group_gender = new System.Windows.Forms.GroupBox();
             this.rbtn_female = new System.Windows.Forms.RadioButton();
             this.rbtn_male = new System.Windows.Forms.RadioButton();
             this.txt_identification = new System.Windows.Forms.TextBox();
@@ -44,7 +44,7 @@
             this.btn_register = new System.Windows.Forms.Button();
             this.btn_calcule = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.group_gender.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -97,18 +97,18 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Costo Mensualidad";
             // 
-            // groupBox1
+            // group_gender
             // 
-            this.groupBox1.Controls.Add(this.rbtn_female);
-            this.groupBox1.Controls.Add(this.rbtn_male);
-            this.groupBox1.Location = new System.Drawing.Point(369, 357);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(193, 130);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Género";
+            this.group_gender.Controls.Add(this.rbtn_female);
+            this.group_gender.Controls.Add(this.rbtn_male);
+            this.group_gender.Location = new System.Drawing.Point(369, 357);
+            this.group_gender.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.group_gender.Name = "group_gender";
+            this.group_gender.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.group_gender.Size = new System.Drawing.Size(193, 130);
+            this.group_gender.TabIndex = 5;
+            this.group_gender.TabStop = false;
+            this.group_gender.Text = "Género";
             // 
             // rbtn_female
             // 
@@ -227,7 +227,7 @@
             this.Controls.Add(this.txt_salary);
             this.Controls.Add(this.txt_name);
             this.Controls.Add(this.txt_identification);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.group_gender);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -237,8 +237,8 @@
             this.Name = "GimnasioRobles";
             this.Text = "Gimnasio Robles";
             this.Load += new System.EventHandler(this.GimnasioRobles_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.group_gender.ResumeLayout(false);
+            this.group_gender.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,7 +251,7 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private GroupBox groupBox1;
+        private GroupBox group_gender;
         private RadioButton rbtn_female;
         private RadioButton rbtn_male;
         private TextBox txt_identification;

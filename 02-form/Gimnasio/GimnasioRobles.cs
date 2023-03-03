@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gimnasio.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,9 +41,29 @@ namespace Gimnasio
 
         private void btn_calcule_Click(object sender, EventArgs e)
         {
+            calcularMensualidad();
+        }
+
+        private void calcularMensualidad()
+        {
+            Usuario usuario = new Usuario();
+            usuario.Identificacion = txt_identification.Text;
+            usuario.Nombre = txt_name.Text;
+            usuario.Sueldo = float.Parse(txt_salary.Text);
+            usuario.Estrato = int.Parse(txt_stratum.Text);
+            usuario.Genero = rbtn_male.Checked ? 'M' : 'F';
+
+            usuario.Mensualidad = usuario.calcularMensualidad();
+            usuario.Descuento = usuario.calcularDescuento(usuario.Mensualidad);
+            usuario.TotalMensualidad = usuario.Mensualidad - usuario.Descuento;
+
+            Report report = new Report();
+            report.usuario = usuario;
+            report.Show();
+            txt_total.Text = usuario.TotalMensualidad.ToString("c");
 
         }
 
-       
+
     }
 }
